@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body.blue {
+    background-color: rgb(26, 100, 122);
+}
+
+body.dark {
+    background-color: rgb(35, 35, 36);
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: 0 auto 15px;
+    height: 75px;
+    background-color: rgb(26, 100, 122);
+    opacity: 0.7;
+}
+
+h2 {
+    margin: 0;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.header-logo {
+    width: 100px;
+    padding-left: 5px;
+}
+
+.theme-text {
+    align-items:center;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.theme-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    list-style: none;
+    margin: 0;
+}
+
+.theme-btn {
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    color: black;
+    background: #afd8f0;
+    margin: 2px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    height: 35px;
+}
+
+.input-text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    font-size: 25px;
+    outline: none;
+    border: 1px solid white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.input-cancel {
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    caret-color: transparent; 
+    background-image: url('./assets/svg/cancel.svg');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-submit {
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: 1px solid white;
+    border-left-color: slategrey;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    caret-color: transparent; 
+    background-image: url('./assets/svg/search.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-container {
+    width: 1280px;
+    margin: auto;
+}
+
+.main-table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+.table-item {
+    width: 380px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 15px auto 0;
+    background-color: rgb(26, 100, 122);
+    opacity: 0.7;
+}
+
+.footer-container.full-screen {
+    opacity: 0;
+    transition: 5s;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center; 
+}
+
+.footer-item {
+    margin: 0;
+    padding-left: 5px;
+    font-family: natuve;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.gh-logo {
+    width: 75px;
+    height: 25px;
+    background-image: url('./assets/svg/GitHub_Logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.rss-logo {
+    width: 75px;
+    height: 25px;
+    background-image: url("./assets/svg/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+@media (max-width: 1280px) {
+    .main-container {
+    width: 100%;
+    }
+}
